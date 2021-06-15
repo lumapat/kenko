@@ -40,7 +40,11 @@ packages:
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
-# extra-deps: []
+extra-deps:
+- graphql-0.11.1.0@sha256:146066c0c9b9dd4c2f46d02be5f923997ec6d03b67cc60f6b6d074f5b3ce3b19,3483
+- mu-graphql-0.5.0.2@sha256:92d5dcdc8564debc7e60b4f902ef8d61aeea7dcdc6e07bf03e55eb1d4e0fd7d8,2713
+- mu-rpc-0.5.0.1@sha256:6ff07f30d3d8283c71852cb1fa952c9e34a7108b619ec4a92619a96835912f88,1391
+- mu-schema-0.3.1.2@sha256:c05e58de29d50376638d19dd3357cd3644d39f984664484f3568d5305b3034d9,1933
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

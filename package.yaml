@@ -21,6 +21,14 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- conduit
+- mu-graphql
+- mu-rpc
+- mu-schema
+- text
+- wai-extra
+- warp
+
 
 library:
   source-dirs: src
@@ -34,7 +42,16 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
+    - conduit
     - kenko
+    - mu-graphql
+    - mu-rpc
+    - mu-schema
+    - text
+    - wai-extra
+    - warp
+
+
 
 tests:
   kenko-test:

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d5e5b9b34ac21b4ad6634639ad191d46aa8567a98098d15e4800e8ea86f562be
+-- hash: 909f861a1f6442f409585d82cf48c082177907d41c3e679dde5aaec85979215f
 
 name:           kenko
 version:        0.1.0.0
@@ -34,6 +34,13 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , conduit
+    , mu-graphql
+    , mu-rpc
+    , mu-schema
+    , text
+    , wai-extra
+    , warp
   default-language: Haskell2010
 
 executable kenko-exe
@@ -45,7 +52,14 @@ executable kenko-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , conduit
     , kenko
+    , mu-graphql
+    , mu-rpc
+    , mu-schema
+    , text
+    , wai-extra
+    , warp
   default-language: Haskell2010
 
 test-suite kenko-test
@@ -58,5 +72,12 @@ test-suite kenko-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , conduit
     , kenko
+    , mu-graphql
+    , mu-rpc
+    , mu-schema
+    , text
+    , wai-extra
+    , warp
   default-language: Haskell2010
