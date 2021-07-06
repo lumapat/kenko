@@ -1,0 +1,1 @@
+curl -X POST --header 'Content-Type: application/json' --data '{"query": "query {hello} "}' http://localhost:3000/api

@@ -1,34 +1,10 @@
-{-# language DataKinds             #-}
-{-# language FlexibleContexts      #-}
-{-# language OverloadedStrings     #-}
-{-# language PartialTypeSignatures #-}
-{-# language PolyKinds             #-}
-{-# language ScopedTypeVariables   #-}
-{-# language TemplateHaskell       #-}
-{-# language TypeApplications      #-}
-{-# language TypeFamilies          #-}
-{-# language TypeOperators         #-}
-{-# OPTIONS_GHC -fno-warn-partial-type-signatures #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 module Main where
 
-import           Data.Proxy
-
-import           Mu.GraphQL.Quasi
-import           Mu.GraphQL.Server
-import           Mu.Server
-
-graphql "ServiceDefinition" "schema.graphql"
-serverPort = 8000
-
--- GraphQL App
+import qualified API (api)
+import Control.Monad.IO.Class (liftIO)
+import Web.Scotty (body, post, raw, scotty)
 
 main :: IO ()
-main = do
-    putStrLn $ "Starting GraphQL server on port " ++ show serverPort
-    runGraphQLAppQuery serverPort server (Proxy @"Query")
-
-type ServiceMapping = '[]
-
-server :: MonadServer m => ServerT ServiceMapping i ServiceDefinition m _
-server = resolver ( object @"Query" ( method @"hello" $ pure $ Just "Tada!!" ) )
+main = scotty 3000 $ post "/api" $ raw =<< (liftIO . API.api =<< body)

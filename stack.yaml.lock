@@ -5,33 +5,26 @@
 
 packages:
 - completed:
-    hackage: graphql-0.11.1.0@sha256:146066c0c9b9dd4c2f46d02be5f923997ec6d03b67cc60f6b6d074f5b3ce3b19,3483
+    hackage: morpheus-graphql-0.17.0@sha256:487ad2e2b11d1038a65068f139f291a4e7b00986c347132b56e141608f0c8789,29450
     pantry-tree:
-      size: 3034
-      sha256: 7e77d88aa973f6ae51409858611b440276df1ba458d3b8211099686a74391c3d
+      size: 42453
+      sha256: 47edd42f1f905dc5982e7f66c291e661e5b067d26167ec30cd1284cf9948538f
   original:
-    hackage: graphql-0.11.1.0@sha256:146066c0c9b9dd4c2f46d02be5f923997ec6d03b67cc60f6b6d074f5b3ce3b19,3483
+    hackage: morpheus-graphql-0.17.0
 - completed:
-    hackage: mu-graphql-0.5.0.2@sha256:92d5dcdc8564debc7e60b4f902ef8d61aeea7dcdc6e07bf03e55eb1d4e0fd7d8,2713
+    hackage: morpheus-graphql-app-0.17.0@sha256:7561a7b371673417c8d7e4200ce2e79f01b5a8557547efdf341136459132d9cc,5425
     pantry-tree:
-      size: 914
-      sha256: 672ebb227827ce2b19583cd98749c598ea4f39a75bcd931d940878682fc5b31b
+      size: 5317
+      sha256: d3d8fc0014a6b22eb1fedc29c4472e9d0c921383d7e4971318a2e587c5bafec9
   original:
-    hackage: mu-graphql-0.5.0.2@sha256:92d5dcdc8564debc7e60b4f902ef8d61aeea7dcdc6e07bf03e55eb1d4e0fd7d8,2713
+    hackage: morpheus-graphql-app-0.17.0@sha256:7561a7b371673417c8d7e4200ce2e79f01b5a8557547efdf341136459132d9cc,5425
 - completed:
-    hackage: mu-rpc-0.5.0.1@sha256:6ff07f30d3d8283c71852cb1fa952c9e34a7108b619ec4a92619a96835912f88,1391
+    hackage: morpheus-graphql-core-0.17.0@sha256:4192366e2c23594a435364cc42832f2949620b8b116a69b57e59fde7111b1a0d,12939
     pantry-tree:
-      size: 445
-      sha256: bce492cc34a5da696f53482020a216566c053e19091ec779a0b21e1899a74f13
+      size: 17920
+      sha256: af0f6d14d48104baa11b997d26486ea98393a10456ea1c56447587969fffc252
   original:
-    hackage: mu-rpc-0.5.0.1@sha256:6ff07f30d3d8283c71852cb1fa952c9e34a7108b619ec4a92619a96835912f88,1391
-- completed:
-    hackage: mu-schema-0.3.1.2@sha256:c05e58de29d50376638d19dd3357cd3644d39f984664484f3568d5305b3034d9,1933
-    pantry-tree:
-      size: 1061
-      sha256: 07d5d0ab3fc6db8e7492311caacbd92f33a343fd173cb51d2915522b3aea8073
-  original:
-    hackage: mu-schema-0.3.1.2@sha256:c05e58de29d50376638d19dd3357cd3644d39f984664484f3568d5305b3034d9,1933
+    hackage: morpheus-graphql-core-0.17.0@sha256:4192366e2c23594a435364cc42832f2949620b8b116a69b57e59fde7111b1a0d,12939
 snapshots:
 - completed:
     size: 567675

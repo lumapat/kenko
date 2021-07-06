@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 909f861a1f6442f409585d82cf48c082177907d41c3e679dde5aaec85979215f
+-- hash: fbffe6df876e9b62440cf1dde01a07705ba0cd9d4c25606c9ffcb3203121823d
 
 name:           kenko
 version:        0.1.0.0
@@ -27,20 +27,17 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      API
   other-modules:
       Paths_kenko
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
-    , conduit
-    , mu-graphql
-    , mu-rpc
-    , mu-schema
+    , bytestring
+    , morpheus-graphql
+    , scotty
     , text
-    , wai-extra
-    , warp
   default-language: Haskell2010
 
 executable kenko-exe
@@ -52,14 +49,11 @@ executable kenko-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , conduit
+    , bytestring
     , kenko
-    , mu-graphql
-    , mu-rpc
-    , mu-schema
+    , morpheus-graphql
+    , scotty
     , text
-    , wai-extra
-    , warp
   default-language: Haskell2010
 
 test-suite kenko-test
@@ -72,12 +66,9 @@ test-suite kenko-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , conduit
+    , bytestring
     , kenko
-    , mu-graphql
-    , mu-rpc
-    , mu-schema
+    , morpheus-graphql
+    , scotty
     , text
-    , wai-extra
-    , warp
   default-language: Haskell2010
